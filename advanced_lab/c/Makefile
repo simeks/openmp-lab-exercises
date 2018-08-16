@@ -6,7 +6,7 @@ CFLAGS = -O2 -openmp
 else ifeq ($(CRAY_PRGENVGNU), loaded)
 CFLAGS = -O2 -fopenmp
 else
-CFLAGS = -O2
+CFLAGS = -O2 -fopenmp
 endif
 SRC = vtk_export.c shwater2d.c
 OBJS = ${SRC:.c=.o}
